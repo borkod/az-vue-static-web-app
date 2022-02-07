@@ -1,5 +1,15 @@
 {
     "navigationFallback": {
         "rewrite": "/index.html"
-    }
+    },
+    "routes": [
+        {
+        "route": "/profile*",
+        "allowedRoles": ["authenticated"]
+        },
+        {
+        "route": "/login",
+        "redirect": "/.auth/login/github"
+        }
+    ]
 }
