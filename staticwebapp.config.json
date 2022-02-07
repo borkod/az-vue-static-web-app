@@ -1,12 +1,16 @@
 {
     "routes": [
         {
-        "route": "/profile*",
+        "route": "/profile.html",
         "allowedRoles": ["authenticated"]
         },
         {
-        "route": "/login",
+        "route": "/login-github",
         "redirect": "/.auth/login/github"
+        },
+        {
+        "route": "/login-twitter",
+        "redirect": "/.auth/login/twitter"
         }
     ]
 }
